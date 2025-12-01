@@ -1,0 +1,37 @@
+exp-8
+sudo yum update -y
+sudo yum install docker -y
+sudo service docker start
+sudo systemctl enable docker
+sudo usermod -a -G docker ec2-user
+vim index.html
+vim Dockerfile
+docker build -t myimage:1.0
+docker -d -p 8080:80 myimage:1.0
+docker images
+docker ps
+
+
+exp-6
+yum install java-17-amazon-corretto -y
+copy 3 commands
+yum install Jenkins -y
+systemctl start Jenkins
+cat paste 
+yum install git -y
+git --version
+yum install java-1.8.0-openjdk -y
+yum install maven -y
+mvn --version
+
+
+exp-9
+sudo yum update -y
+sudo yum install docker -y
+sudo service docker start
+systemctl enable docker
+docker info
+vim index.html
+vim dockerfile
+docker build -t mywebsite:1.0
+docker run -d -p 8080:80 mywebsite:1.0
